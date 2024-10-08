@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body leftmargin="2">
+<table width="385" border="0">
+  <tr> 
+    <td width="379"><font size="5" face="Arial, Helvetica, sans-serif"><strong><em><font color="#006600">LastWave 
+      3.0 </font></em> Main packages</strong></font></td>
+  </tr>
+</table>
+<hr>
+<p>LastWave core is composed of 6 packages. The <em>kernel</em>, <em>signal</em> 
+  and <em>image</em> packages are C-packages and the <em>disp</em>, <em>misc</em> 
+  and <em>terminal</em> packages are defined in script.</p>
+<ul>
+  <li>the <em><strong>kernel</strong></em><strong> package</strong> corresponds 
+    to the core of LastWave. It mainly includes 
+    <ul>
+      <li>the parser and the structure of the command language</li>
+      <li>basic commands</li>
+      <li>definition of the basic types such as strings <em>(&amp;str</em>), numbers 
+        (<em>&amp;num,&amp;float,&amp;int</em>), list of values (<em>&amp;listv</em>, 
+        i.e., list of object of arbitrary type) etc...</li>
+      <li>basic graphic management</li>
+    </ul>
+  </li>
+  <li>the <em><strong>signal</strong></em><strong> package</strong> defines the 
+    signal structure (of type <em>&amp;signal</em>) and includes all the commands 
+    that deal with signals. It also includes the definition of the graphic class 
+    <em>GraphSignal</em> that allows to display signals</li>
+  <li>the <em><strong>image</strong></em><strong> package</strong> includes the 
+    image structure (of type <em>&amp;image</em>) andincludes all the commands 
+    that deal with images and/or matrices (thus it includes the linear algebra 
+    commands). It also includes the definition of the graphic class <em>GraphImage</em> 
+    that allows to display images </li>
+  <li>the <em><strong>disp</strong></em><strong> package</strong> defines the 
+    command <em>disp </em>that allows to display basically anything!</li>
+  <li>the <em><strong>terminal</strong></em><strong> package</strong> defines 
+    the behavior of the terminal (help system, completion,...). <strong>To learn 
+    about the help system it type <em>Help</em> at startup.</strong></li>
+  <li>the <em><strong>misc</strong></em><strong> package</strong> defines miscellenaous 
+    things <strong>including how to get interactive help on graphic objects</strong></li>
+</ul>
+<hr>
+</body>
+</html>

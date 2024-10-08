@@ -1,0 +1,1 @@
+<?php$log="../ftp/LastWave/Doc/log";$ip=$_SERVER['REMOTE_ADDR'];$file=$_REQUEST["file"];header("Content-type: application/x-gzip");header("Content-Disposition: attachment; filename=$file");`echo -n "$ip\t$file\t" >> $log`;`date +%x%t%T >> $log`;readfile("../ftp/LastWave/Doc/$file");exit;?>

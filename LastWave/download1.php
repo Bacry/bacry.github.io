@@ -1,0 +1,1 @@
+<?php$log="../ftp/LastWave/log";$ip=$_SERVER['REMOTE_ADDR'];$type=$_REQUEST["type"];$file=$_REQUEST["file"];header("Content-type: application/$type");header("Content-Disposition: attachment; filename=$file");$i1=getenv("PHP_AUTH_USER");`echo -n "$ip\t$computer\t$file\t$i1\t" >> $log`;`date +%x%t%T >> $log`;readfile("../ftp/LastWave/$file");exit;?>
